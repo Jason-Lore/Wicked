@@ -1,0 +1,56 @@
+Real Time Messaging between 1 and X amount of other users
+Real time High Quality Voice communications
+Servers for users to organize thoughts
+Servers should contain private and public places to speak in
+have some sort of LLM to sort through messages to categorize them into informational 'buckets'. This should also know jokes/memes and sort those appropriately.
+Set up topic pages to create a dynamic growing web of information that is built for searching.
+Topic pages should be attached to servers AND standalone.
+Have moderation and fact checking systems in place.
+Topic pages should have experts automatically assigned based on the moderation system assigning reputation
+
+I also just want an obsidian-like graph view...bc it looks fun :3
+
+
+As a user I should be able to search a question very much like any search engine
+The application should then search its own internal databases for people who have contributed to that topic, any topic pages that are related, and servers that have spoken about said topic.
+The user should then be able to read the information or join various servers to talk about topics.
+
+
+
+
+
+How should Accounts work?
+
+
+How Should Servers work?
+    Users should be able to join a server internally or from an external source
+    Users should be able to see and select a list of places they can type/speak in
+
+How should the LLM crawler work?
+    the crawler should frequently go through each public marked channel and see if that channel has been checked before.
+    if it has been checked before check the GUID of the last message checked and grab all new messages sent after that point
+    if meaningful messages are found sort them into their buckets and update any topics as needed.
+    notate the last message GUID for next crawl.
+
+
+
+
+Step 1.
+    Database - MongoDB
+        Accounts
+        Servers
+
+Step 2.    
+    Accounts -
+        GUID
+        Name
+        Username
+        Email
+        Password(salted and hashed all that fun stuff)
+        Banner Image(s)
+        Profile Picture(s)
+    
+Step 3.
+    Direct messages -
+        send messages between two accounts
+        
